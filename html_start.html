@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning HTML</title>
+</head>
+<body>
+    <!-- Headings H1- H6 -->
+    <h1>This is H1</h1>
+    <h2>This is H2</h2>
+    <h3>This is H3</h3>
+    <h4>This is H4</h4>
+    <h5>This is H5</h5>
+    <h6>This is H6</h6>
+
+    <!-- paragraph -->
+    <p>This is my Paragraph in my html learning journey</p>
+
+    <!-- links -->
+    <a href="https://www.google.com">Google</a><br>
+    <a href="#section-id">Section</a><br>
+    <a href="another-page.html">Another-Page</a><br>
+
+    <!-- image -->
+    <img src="sample.png" alt="ImageNotFound">
+    <img src="https://placehold.co/300x200/cccccc/ffffff?text=My+Image" alt="A placeholder image for demonstration">
+
+    <!-- List -->
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ol>
+    
+    <!-- division -->
+    <div style="background-color: lightblue; padding: 10px;">
+        This is a div. It takes up the full width
+        <p>This paragraph is inside a division</p>
+    </div>
+
+    <!-- span -->
+    <p>This is a paragraph with <span style="color: red; font-weight: bold;">some bold red text</span></p>
+
+    <!-- scematic Html Structure -->
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+        </nav>
+        <h1>Welcome to My Blog</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>First blog post title</h2>
+            <p>This is the content of my first blog post...</p>
+        </article>
+
+        <section>
+            <h2>Related Article</h2>
+            <ul>
+                <li><a href="#">Article 1</a></li>
+                <li><a href="#">Article 2</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2025 My Awesome Blog</p>
+    </footer>
+
+    <!-- basic form making -->
+    <h2>My First Form</h2>
+    <form action="/submit-form" method="POST">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="your@example.com">
+        </div>
+        <div>
+            <label for="message">Your Message:</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="">--Please choose an option--</option>
+                <option value="usa">USA</option>
+                <option value="can">Canada</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- table making -->
+    <h2>My First Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>24</td>
+                <td>London</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Embedding Media -->
+    <video controls width="400" height="300">
+        <source src="my_video.mp4" type="video/mp4">
+        Your Browser does not support the video tag.
+    </video>
+    <audio controls>
+        <source src="my_audio.mp3" type="audio/mpeg">
+        Your Browser does not support the audio tag.
+    </audio>
+
+    <!--  -->
+</body>
+</html>
