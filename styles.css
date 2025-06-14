@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    background-color: #f0f0f0; 
+}
+
+.traffic-light {
+    background-color: black; 
+    padding: 20px 20px 20px 20px;
+    width: 50px;
+    border-radius: 20px;       
+}
+
+.light {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#green-light {
+    background-color: green;
+    margin: 0;
+}
+
+#red-light {
+    background-color: red;
+}
+
+#yellow-light {
+    background-color: yellow;
+}
+

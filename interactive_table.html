@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Statistics Table Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      text-align: center;
+    }
+    input[type="number"], input[type="text"] {
+      padding: 8px;
+      width: 150px;
+      margin: 10px;
+    }
+    button {
+      padding: 8px 20px;
+      cursor: pointer;
+    }
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      margin: 30px auto;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Statistical Data Entry</h2>
+  
+  <label for="rowCount">Enter number of rows:</label>
+  <input type="number" id="rowCount" min="1" placeholder="e.g. 5">
+  <button onclick="generateTable()">Create Table</button>
+
+  <div id="tableContainer"></div>
+
+  <script>
+    function generateTable() {
+      const rowCount = parseInt(document.getElementById("rowCount").value);
+      if (!rowCount || rowCount <= 0) {
+        alert("Please enter a valid number of rows.");
+        return;
+      }
+
+      let tableHTML = `
+        <table>
+          <thead>
+            <tr>
+              <th>Class Interval</th>
+              <th>Frequency (f)</th>
+              <th>Midpoint (x)</th>
+              <th>f × x</th>
+              <th>Cumulative Frequency</th>
+            </tr>
+          </thead>
+          <tbody>
+      `;
+
+      for (let i = 0; i < rowCount; i++) {
+        tableHTML += `
+          <tr>
+            <td><input type="text" placeholder="e.g., 0–10"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number" readonly></td>
+            <td><input type="number" readonly></td>
+          </tr>
+        `;
+      }
+
+      tableHTML += `</tbody></table>`;
+      document.getElementById("tableContainer").innerHTML = tableHTML;
+    }
+  </script>
+
+</body>
+</html>
